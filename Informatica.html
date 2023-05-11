@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Times New Roman'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Times New Roman'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; text-decoration:underline; color:#0563C1; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style2 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; text-decoration:underline; color:#0563C1; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style3 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style3 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style4 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style4 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style5 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; text-decoration:underline; color:#0563C1; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style5 { vertical-align:bottom; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; text-decoration:underline; color:#0563C1; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style6 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style6 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style7 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style7 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      table.sheet0 col.col0 { width:320.58888521pt }
+      table.sheet0 col.col1 { width:448.68888374pt }
+      table.sheet0 tr { height:15pt }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+    </style>
+        <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+            <col class="col0">
+            <col class="col1">
+            <tbody>
+              <tr class="row0">
+                <td class="column0 style1 s">Comunicação e Expressão </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/comunicacao-e-expressao" title="">https://www.ev.org.br/cursos/comunicacao-e-expressao </a></td>
+              </tr>
+              <tr class="row1">
+                <td class="column0 style1 s">Língua Portuguesa sem complicações </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/lingua-portuguesa-sem-complicacoes" title="">https://www.ev.org.br/cursos/lingua-portuguesa-sem-complicacoes </a></td>
+              </tr>
+              <tr class="row2">
+                <td class="column0 style3 s">Word básico  </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/microsoft-word-2016-basico" title="">https://www.ev.org.br/cursos/microsoft-word-2016-basico  </a></td>
+              </tr>
+              <tr class="row3">
+                <td class="column0 style1 s">Introdução ao Excel </td>
+                <td class="column1 style2 s"><a href="https://www.escolavirtual.gov.br/curso/459" title="">https://www.escolavirtual.gov.br/curso/459 </a></td>
+              </tr>
+              <tr class="row4">
+                <td class="column0 style1 s">Fundamentos do design gráfico </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/fundamentos-do-design-grafico" title="">https://www.ev.org.br/cursos/fundamentos-do-design-grafico </a></td>
+              </tr>
+              <tr class="row5">
+                <td class="column0 style1 s">Lei Geral de Proteção de dados </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/lei-geral-de-protecao-de-dados-lgpd" title="">https://www.ev.org.br/cursos/lei-geral-de-protecao-de-dados-lgpd </a></td>
+              </tr>
+              <tr class="row6">
+                <td class="column0 style1 s">Excel básico </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/microsoft-excel-2016-basico" title="">https://www.ev.org.br/cursos/microsoft-excel-2016-basico </a></td>
+              </tr>
+              <tr class="row7">
+                <td class="column0 style1 s">Modelando dados no Power Bi </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/modelando-dados-no-power-bi" title="">https://www.ev.org.br/cursos/modelando-dados-no-power-bi </a></td>
+              </tr>
+              <tr class="row8">
+                <td class="column0 style1 s">Introdução a análise de dados no Power Bi </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/introducao-a-analise-de-dados-microsoft-power-bi" title="">https://www.ev.org.br/cursos/introducao-a-analise-de-dados-microsoft-power-bi </a></td>
+              </tr>
+              <tr class="row9">
+                <td class="column0 style1 s">Preparando dados para análise Power Bi </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/preparando-dados-para-analise-microsoft-power-bi" title="">https://www.ev.org.br/cursos/preparando-dados-para-analise-microsoft-power-bi </a></td>
+              </tr>
+              <tr class="row10">
+                <td class="column0 style1 s">Fundamentos de TI hardware e software </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/fundamentos-de-ti-hardware-e-software" title="">https://www.ev.org.br/cursos/fundamentos-de-ti-hardware-e-software </a></td>
+              </tr>
+              <tr class="row11">
+                <td class="column0 style1 s">Ética no desenvolvimento de sistemas </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/etica-no-desenvolvimento-de-sistemas" title="">https://www.ev.org.br/cursos/etica-no-desenvolvimento-de-sistemas </a></td>
+              </tr>
+              <tr class="row12">
+                <td class="column0 style4 s">Fundamentos de Lógica de Programação </td>
+                <td class="column1 style5 s"><a href="https://www.ev.org.br/cursos/fundamentos-de-logica-de-programacao" title="">https://www.ev.org.br/cursos/fundamentos-de-logica-de-programacao </a></td>
+              </tr>
+              <tr class="row13">
+                <td class="column0 style6 s"> </td>
+                <td class="column1 style7 null"></td>
+              </tr>
+              <tr class="row14">
+                <td class="column0 style4 s">Linguagem de Programação Python - Básico </td>
+                <td class="column1 style5 s"><a href="https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico" title="">https://www.ev.org.br/cursos/linguagem-de-programacao-python-basico </a></td>
+              </tr>
+              <tr class="row15">
+                <td class="column0 style6 s"> </td>
+                <td class="column1 style7 null"></td>
+              </tr>
+              <tr class="row16">
+                <td class="column0 style3 s">HTML - Básico </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/html-basico" title="">https://www.ev.org.br/cursos/html-basico </a></td>
+              </tr>
+              <tr class="row17">
+                <td class="column0 style3 s">Inovando Com CSS </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/inovando-com-css" title="">https://www.ev.org.br/cursos/inovando-com-css </a></td>
+              </tr>
+              <tr class="row18">
+                <td class="column0 style3 s">HTML e CSS na Prática </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/html-e-css-na-pratica" title="">https://www.ev.org.br/cursos/html-e-css-na-pratica </a></td>
+              </tr>
+              <tr class="row19">
+                <td class="column0 style3 s">Criando um Projeto com Interface Gráfica Utilizando a Linguagem Python. </td>
+                <td class="column1 style2 s"><a href="https://www.ev.org.br/cursos/criando-um-projeto-com-interface-grafica-utilizando-a-linguagem-python" title="">https://www.ev.org.br/cursos/criando-um-projeto-com-interface-grafica-utilizando-a-linguagem-python </a></td>
+              </tr>
+            </tbody>
+        </table>
+      </body>
+    </html>
